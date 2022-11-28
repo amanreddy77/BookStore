@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="port.css">
+    <link rel="stylesheer" href="fonti">
+
+</head>
+
+<body class="w3-light-grey" style="background-color:black
+">
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-text-light-grey w3-large"
+        style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
+        <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-32">CLICK</a>
+        <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">PORTFOLIO</a>
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">ABOUT SECTION</a>
+        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">COMMUNICATE</a>
+
+    </nav>
+
+    <!-- Top menu on small screens -->
+    <header class="w3-container w3-top w3-white w3-xlarge w3-padding-16">
+        <span class="w3-left w3-padding">AMAN REDDY PUNDRU</span>
+        <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+        id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main w3-content" style="max-width:1600px;margin-top:83px">
+
+        <!-- Photo grid -->
+        <div class="w3-row w3-grayscale-min">
+            <div class="w3-quarter">
+                <img src="MAN1.jpg" style="width:100%" onclick="onClick(this)" alt="#ALWAYS AIM HIGH">
+                <img src="aman4.jpg" style="width:100%" onclick="onClick(this)"
+                    alt="#The real FAILURE is when YOU STOP TRYING  ">
+                <img src="man3.jpg" style="width:100%" onclick="onClick(this)"
+                    alt="#I TURN INTO A  BETTER VERSION EVERYDAY">
+            </div>
+
+            <div class="w3-quarter">
+                <img src="man5.jpg" style="width:100%" onclick="onClick(this)" alt="#Smile like there's no tommorow">
+                <img src="aman2.jpg" style="width:100%" onclick="onClick(this)"
+                    alt="#Focus on SOLUTION,not the PROBLEM">
+                <img src="amanfinal.jpg" style="width:105%" onclick="onClick(this)"
+                    alt="#Don't try to compete me ,You may have the higher chance of loosing">
+
+            </div>
+
+            <div class="w3-quarter">
+                <img src="MAN2.jpg" style="width:100%" onclick="onClick(this)" alt="#I'm straight as an ARROW">
+                <img src="man7.jpg" style="width:100%" onclick="onClick(this)" alt="#I PRIORTIZE ME  ">
+
+                <img src="man9.jpg" style="width:100%" onclick="onClick(this)"
+                    alt="#AS CALM AS A LION BEFORE IT'S HUNT ">
+            </div>
+
+            <div class="w3-quarter">
+                <img src="man13.jpg" style="width:100%" onclick="onClick(this)"
+                    alt="#You shine more,if you do the things you LOVE">
+                <img src="final.jpg" style="width:100%" onclick="onClick(this)"
+                    alt="# I have a power to smile even by hiding a million of thoughts inside me">
+
+                <img src="man12.jpg" style="width:100%" onclick="onClick(this)"
+                    alt="#Don't let your YESTERDAY take too much of TODAY,ENJOY THE REST">
+            </div>
+
+        </div>
+
+        <!-- Pagination -->
+        <div class="w3-center w3-padding-32">
+            <div class="w3-bar">
+                <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+                <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+            </div>
+        </div>
+
+        <!-- Modal for full size images on click-->
+        <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+            <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+            <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+                <img id="img01" class="w3-image">
+                <p id="caption"></p>
+            </div>
+        </div>
+
+
+
+        <!-- About section -->
+        <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+            <h4><b style="font-size:x-large ;color:white">About Me</b></h4>
+            <img src="about2.jpg" alt="Me" class="w3-image w3-padding-32" width="500" height="600">
+            <div class="w3-content w3-justify" style="max-width:600px">
+                <h4>AMAN REDDY </h4>
+                <p style="font-size:17px ;"> Hello viewers...!!! I am AMAN REDDY here,This is my official portfolio made
+                    by me.
+                    Currently I'm persuing my CSE(AI) BTECH-2ND Year at parul university,gujarat.
+                    From the childhood itself I'm quite ineterested in the computer hardware and it's software.
+                    So I've worked on the frontend development as you can see my portfolio page, also would do well in
+                    programming languages like C,C++ and can do better in JAVA.
+                    I like to have a composed life ,where I could be pursuing my passion rather than following others.
+                    So I can help solving any kind of logical problems regarding the programming languages and can help
+                    desinging the websites.
+                    So viewers if you need any help in solving ,creating websites,technical help ,Please contact me by
+                    my details mentioned below. </p>
+                <p>mail : reddyaman77.ar@gmail.com</p>
+                <p>tel: 7093993755</p>
+                <a href="https://www.instagram.com/reddy_aman_77/"><img
+                        src="https://mpng.subpng.com/20180705/yev/kisspng-computer-icons-logo-instagram-kit-harington-5b3deabec30e98.696019811530784446799.jpg"
+                        width="50px" height="30px" style=" border-radius:15px"></a>
+
+                <a href="https://wa.me/<7093993755>"><img
+                        src="https://w7.pngwing.com/pngs/212/750/png-transparent-call-application-icon-whatsapp-computer-icons-whatsapp-logo-black-and-white-brand.png"
+                        width="50px" height="30px" style=" border-radius:15px"></a>
+                <a href="https://twitter.com"><img
+                        src="https://www.seekpng.com/png/detail/792-7924791_twitter-blue-twitter-icon-png.png"
+                        width="50px" height="30px" style=" border-radius:15px"></a>
+
+
+
+                <hr class="w3-opacity">
+                <h4 class="w3-padding-16">Technical Skills</h4>
+                <p class="w3-wide">EDITING</p>
+                <div class="w3-white">
+                    <div class="w3-container w3-padding-small w3-center w3-grey" style="width:85%">85%</div>
+                </div>
+                <p class="w3-wide">WEB DESIGN</p>
+                <div class="w3-white">
+                    <div class="w3-container w3-padding-small w3-center w3-grey" style="width:90%">90%</div>
+                </div>
+                <p class="w3-wide">PROGRAMMING</p>
+                <div class="w3-white">
+                    <div class="w3-container w3-padding-small w3-center w3-grey" style="width:96%">96%</div>
+                </div>
+                <br>
+
+
+
+
+                <h4 class="w3-padding-16">How much I charge</h4>
+                <div class="w3-row-padding" style="margin:0 -16px">
+                    <div class="w3-half w3-margin-bottom">
+                        <ul class="w3-ul w3-white w3-center">
+                            <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
+                            <li class="w3-padding-16">Web Design</li>
+                            <li class="w3-padding-16">programming</li>
+                            <li class="w3-padding-16">technical help</li>
+                            <li class="w3-padding-16">Mail Support</li>
+                            <li class="w3-padding-16">
+                                <h2> ₹ 5000</h2>
+                                <span class="w3-opacity">per month</span>
+                            </li>
+                            <li class="w3-light-grey w3-padding-24">
+                                <button class="w3-button w3-white w3-padding-large">Sign Up</button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="w3-half">
+                        <ul class="w3-ul w3-white w3-center">
+                            <li class="w3-black w3-xlarge w3-padding-32">Pro</li>
+                            <li class="w3-padding-16">Web Design</li>
+                            <li class="w3-padding-16">PROGRAMMING</li>
+                            <li class="w3-padding-16">TECHINCAL SUPPORT</li>
+                            <li class="w3-padding-16">Endless Support</li>
+                            <li class="w3-padding-16">
+                                <h2> ₹ 9000</h2>
+                                <span class="w3-opacity">per month</span>
+                            </li>
+                            <li class="w3-light-grey w3-padding-24">
+                                <button class="w3-button w3-white w3-padding-large">Sign Up</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact section -->
+        <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
+            <div class="w3-content" style="max-width:600px">
+                <h4 class="w3-center"><b style="font-size:large ;">Contact Me</b></h4>
+                <p style="font-size:medium ;">Do you want me to make ur website or solve your techincal doubts ? Fill
+                    out the form
+                    and fill me in with the details :) I like to enhance with like minded people</p>
+                <form action="/action_page.php" target="_blank">
+                    <div class="w3-section">
+                        <label>Name</label>
+                        <input class="w3-input w3-border" type="text" name="Name" required>
+                    </div>
+                    <div class="w3-section">
+                        <label>Email</label>
+                        <input class="w3-input w3-border" type="text" name="Email" required>
+                    </div>
+                    <div class="w3-section">
+                        <label>Message</label>
+                        <input class="w3-input w3-border" type="text" name="Message" required>
+                    </div>
+                    <button type="submit" class="w3-button w3-block w3-black w3-margin-bottom">Send Message</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="w3-container w3-padding-32 w3-grey">
+            <div class="w3-row-padding">
+                <div class="w3-third">
+                    <h3>INFO</h3>
+                    <p style="font-size: 20px; ">@aman reddy S/O SRINIVAS REDDY Kouta ,Ranga reddy district,Hyderabad
+                        TELANGANA
+                    </p>
+                </div>
+
+                <div class="w3-third">
+                    <h3>HOBBIES</h3>
+                    <ul class="w3-ul">
+                        <li class="w3-padding-16 w3-hover-black">
+                            <img src="https://www.w3schools.com/w3images/workshop.jpg" class="w3-left w3-margin-right"
+                                style="width:50px">
+                            <span class="w3-large">MUSIC</span><br>
+                            <span>Melody,Soothing</span>
+                        </li>
+                        <li class="w3-padding-16 w3-hover-black">
+                            <img src="https://www.w3schools.com/w3images/gondol.jpg" class="w3-left w3-margin-right"
+                                style="width:50px">
+                            <span class="w3-large">TRAVELLING</span><br>
+                            <span>EXPLORING,RIDING BIKE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="w3-third">
+                    <h3>POPULAR TAGS</h3>
+                    <p>
+                        <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span
+                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">New York</span> <span
+                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">London</span>
+                        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">IKEA</span> <span
+                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">NORWAY</span> <span
+                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">DIY</span>
+                        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ideas</span> <span
+                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Baby</span> <span
+                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Family</span>
+                        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">News</span> <span
+                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Clothing</span> <span
+                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Shopping</span>
+                        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Sports</span> <span
+                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Games</span>
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <div class="w3-black w3-center w3-padding-24">Made with <a href="https://www.instagram.com/reddy_aman_77/"
+                title="spaces" target="_blank" class="w3-hover-opacity">AMAN_REDDY</a></div>
+
+        <!-- End page content -->
+    </div>
+
+    <script>
+        // Script to open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+    </script>
+
+
+</body>
+
+</html>

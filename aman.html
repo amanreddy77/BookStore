@@ -1,80 +1,91 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
+    <meta name="viewport" content="width=device, initial-scale=1.0">
+    <title>Bookstore</title>
     <link rel="stylesheet" href="port.css">
-    <link rel="stylesheer" href="fonti">
-
+    <link rel="stylesheet" href="fonts.css">
 </head>
-
-<body class="w3-light-grey" style="background-color:black
-">
+<body class="w3-light-grey" style="background-color: black;">
 
     <!-- Sidebar/menu -->
     <nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-text-light-grey w3-large"
-        style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
-        <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-32">CLICK</a>
-        <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">PORTFOLIO</a>
-        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">ABOUT SECTION</a>
-        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">COMMUNICATE</a>
-
+        style="z-index: 3; width: 250px; font-weight: bold; display: none; right: 0;" id="mySidebar">
+        <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-32">CLOSE</a>
+        <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">BOOKSTORE</a>
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">ABOUT US</a>
+        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">CONTACT US</a>
     </nav>
 
     <!-- Top menu on small screens -->
     <header class="w3-container w3-top w3-white w3-xlarge w3-padding-16">
-        <span class="w3-left w3-padding">AMAN REDDY PUNDRU</span>
+        <span class="w3-left w3-padding">BOOKSTORE</span>
         <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
     </header>
 
     <!-- Overlay effect when opening sidebar on small screens -->
-    <div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+    <div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor: pointer" title="close side menu"
         id="myOverlay"></div>
 
     <!-- !PAGE CONTENT! -->
-    <div class="w3-main w3-content" style="max-width:1600px;margin-top:83px">
+    <div class="w3-main w3-content" style="max-width: 1600px; margin-top: 83px">
 
-        <!-- Photo grid -->
-        <div class="w3-row w3-grayscale-min">
-            <div class="w3-quarter">
-                <img src="MAN1.jpg" style="width:100%" onclick="onClick(this)" alt="#ALWAYS AIM HIGH">
-                <img src="aman4.jpg" style="width:100%" onclick="onClick(this)"
-                    alt="#The real FAILURE is when YOU STOP TRYING  ">
-                <img src="man3.jpg" style="width:100%" onclick="onClick(this)"
-                    alt="#I TURN INTO A  BETTER VERSION EVERYDAY">
-            </div>
 
-            <div class="w3-quarter">
-                <img src="man5.jpg" style="width:100%" onclick="onClick(this)" alt="#Smile like there's no tommorow">
-                <img src="aman2.jpg" style="width:100%" onclick="onClick(this)"
-                    alt="#Focus on SOLUTION,not the PROBLEM">
-                <img src="amanfinal.jpg" style="width:105%" onclick="onClick(this)"
-                    alt="#Don't try to compete me ,You may have the higher chance of loosing">
+<div class="w3-row w3-grayscale-min">
+    <!-- First row of books -->
+    <div class="w3-quarter">
+        <img src="https://m.media-amazon.com/images/I/41ahcNgvN4L.jpg" style="width: 100%" onclick="onClick(this)" alt="But the Morning will come">
+        <p>Every Morning sun rises with us </p>
+        <p>Price: $10.99</p>
+    </div>
 
-            </div>
+    <div class="w3-quarter">
+        <img src="https://m.media-amazon.com/images/I/41eavpJVA3L._AC_UF1000,1000_QL80_.jpg" style="width: 100%" onclick="onClick(this)" alt="So Long See You Tommorow">
+        <p>So long dont miss this book</p>
+        <p>Price: $12.99</p>
+    </div>
 
-            <div class="w3-quarter">
-                <img src="MAN2.jpg" style="width:100%" onclick="onClick(this)" alt="#I'm straight as an ARROW">
-                <img src="man7.jpg" style="width:100%" onclick="onClick(this)" alt="#I PRIORTIZE ME  ">
+    <div class="w3-quarter">
+        <img src="https://m.media-amazon.com/images/I/418S0KtkxbL._AC_UF1000,1000_QL80_.jpg" style="width: 100%" onclick="onClick(this)" alt="Starting out in the evenning">
+        <p>Evennings with these books</p>
+        <p>Price: $9.99</p>
+    </div>
 
-                <img src="man9.jpg" style="width:100%" onclick="onClick(this)"
-                    alt="#AS CALM AS A LION BEFORE IT'S HUNT ">
-            </div>
+    <div class="w3-quarter">
+        <img src="https://m.media-amazon.com/images/I/418olkWtSfL.jpg" style="width: 110%" onclick="onClick(this)" alt="New World in the Morning">
+        <p>New World out there</p>
+        <p>Price: $14.99</p>
+    </div>
 
-            <div class="w3-quarter">
-                <img src="man13.jpg" style="width:100%" onclick="onClick(this)"
-                    alt="#You shine more,if you do the things you LOVE">
-                <img src="final.jpg" style="width:100%" onclick="onClick(this)"
-                    alt="# I have a power to smile even by hiding a million of thoughts inside me">
+    <!-- Additional row of books -->
+    <div class="w3-quarter">
+        <img src="https://m.media-amazon.com/images/I/61Sl921RaKL._AC_UF1000,1000_QL80_.jpg" style="width: 100%" onclick="onClick(this)" alt="Tommorow never Comes">
+        <p>So You Live only Today</p>
+        <p>Price: $11.99</p>
+    </div>
 
-                <img src="man12.jpg" style="width:100%" onclick="onClick(this)"
-                    alt="#Don't let your YESTERDAY take too much of TODAY,ENJOY THE REST">
-            </div>
+    <div class="w3-quarter">
+        <img src="https://m.media-amazon.com/images/I/71cUpiY+eTL._AC_UF1000,1000_QL80_.jpg" style="width: 100%" onclick="onClick(this)" alt="The Novel of Tommorow">
+        <p>Novel Times....</p>
+        <p>Price: $8.99</p>
+    </div>
+
+    <div class="w3-quarter">
+        <img src="https://imgv2-2-f.scribdassets.com/img/word_document/356015301/original/8d47138edd/1695719166?v=1" style="width: 100%" onclick="onClick(this)" alt="All the Tommorows">
+        <p>All about the Future!!!!!</p>
+        <p>Price: $15.99</p>
+    </div>
+
+    <div class="w3-quarter">
+        <img src="https://m.media-amazon.com/images/I/418olkWtSfL.jpg" style="width: 100%" onclick="onClick(this)" alt="New world in the Morning 2">
+        <p>The best copy you will ever read</p>
+        <p>Price: $12.99</p>
+    </div>
+</div>
+<!-- Existing code below this line -->
 
         </div>
 
@@ -90,8 +101,8 @@
             </div>
         </div>
 
-        <!-- Modal for full size images on click-->
-        <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+        <!-- Modal for full-size book images on click-->
+        <div id="modal01" class="w3-modal w3-black" style="padding-top: 0" onclick="this.style.display='none'">
             <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
             <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
                 <img id="img01" class="w3-image">
@@ -99,51 +110,34 @@
             </div>
         </div>
 
-
-
         <!-- About section -->
         <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
-            <h4><b style="font-size:x-large ;color:white">About Me</b></h4>
-            <img src="about2.jpg" alt="Me" class="w3-image w3-padding-32" width="500" height="600">
-            <div class="w3-content w3-justify" style="max-width:600px">
-                <h4>AMAN REDDY </h4>
-                <p style="font-size:17px ;"> Hello viewers...!!! I am AMAN REDDY here,This is my official portfolio made
-                    by me.
-                    Currently I'm persuing my CSE(AI) BTECH-2ND Year at parul university,gujarat.
-                    From the childhood itself I'm quite ineterested in the computer hardware and it's software.
-                    So I've worked on the frontend development as you can see my portfolio page, also would do well in
-                    programming languages like C,C++ and can do better in JAVA.
-                    I like to have a composed life ,where I could be pursuing my passion rather than following others.
-                    So I can help solving any kind of logical problems regarding the programming languages and can help
-                    desinging the websites.
-                    So viewers if you need any help in solving ,creating websites,technical help ,Please contact me by
-                    my details mentioned below. </p>
-                <p>mail : reddyaman77.ar@gmail.com</p>
-                <p>tel: 7093993755</p>
-                <a href="https://www.instagram.com/reddy_aman_77/"><img
-                        src="https://mpng.subpng.com/20180705/yev/kisspng-computer-icons-logo-instagram-kit-harington-5b3deabec30e98.696019811530784446799.jpg"
-                        width="50px" height="30px" style=" border-radius:15px"></a>
-
-                <a href="https://wa.me/<7093993755>"><img
-                        src="https://w7.pngwing.com/pngs/212/750/png-transparent-call-application-icon-whatsapp-computer-icons-whatsapp-logo-black-and-white-brand.png"
-                        width="50px" height="30px" style=" border-radius:15px"></a>
-                <a href="https://twitter.com"><img
-                        src="https://www.seekpng.com/png/detail/792-7924791_twitter-blue-twitter-icon-png.png"
-                        width="50px" height="30px" style=" border-radius:15px"></a>
-
-
-
+            <h4><b style="font-size: x-large; color: white">About Us</b></h4>
+            <img src="https://images.squarespace-cdn.com/content/v1/557f3639e4b043c28125fd8d/1662473011809-WKGMAXIV8UG53Q9DCRV8/Banner-Zoe-logo_white.jpg?format=2500w" alt="About Us" class="w3-image w3-padding-32" width="500" height="600">
+            <div class="w3-content w3-justify" style="max-width: 600px">
+                <h4>Our Bookstore</h4>
+                <p style="font-size: 17px;">Welcome to our book-selling website! We offer a wide range of books in various genres, from fiction to non-fiction. Our mission is to provide you with quality reading material at affordable prices. Whether you're a bookworm or just looking for something new to read, we've got something for everyone.</p>
+                <p>Contact us for any book recommendations or inquiries.</p>
+                <p>Email: Amanbookstore@gmail.com</p>
+                <p>Phone: 7093993755</p>
+                <a href="https://wa.me/7093993755>"><img src="https://w7.pngwing.com/pngs/212/750/png-transparent-call-application-icon-whatsapp-computer-icons-whatsapp-logo-black-and-white-brand.png" width="50px" height="30px"
+                        style="border-radius: 15px;"></a>
+                <a href="https://twitter.com"><img src="https://www.seekpng.com/png/detail/792-7924791_twitter-blue-twitter-icon-png.png" width="50px" height="30px"
+                        style="border-radius: 15px;"></a>
+                <a href="https://www.instagram.com/reddy_aman_77/"><img src="https://mpng.subpng.com/20180705/yev/kisspng-computer-icons-logo-instagram-kit-harington-5b3deabec30e98.696019811530784446799.jpg" width="50px" height="30px"
+                        style="border-radius: 15px;"></a>
                 <hr class="w3-opacity">
-                <h4 class="w3-padding-16">Technical Skills</h4>
-                <p class="w3-wide">EDITING</p>
+                <hr class="w3-opacity">
+                <h4 class="w3-padding-16">OUR STATS</h4>
+                <p class="w3-wide">SPEED</p>
                 <div class="w3-white">
                     <div class="w3-container w3-padding-small w3-center w3-grey" style="width:85%">85%</div>
                 </div>
-                <p class="w3-wide">WEB DESIGN</p>
+                <p class="w3-wide">QUANTITY</p>
                 <div class="w3-white">
                     <div class="w3-container w3-padding-small w3-center w3-grey" style="width:90%">90%</div>
                 </div>
-                <p class="w3-wide">PROGRAMMING</p>
+                <p class="w3-wide">QUALITY</p>
                 <div class="w3-white">
                     <div class="w3-container w3-padding-small w3-center w3-grey" style="width:96%">96%</div>
                 </div>
@@ -152,17 +146,17 @@
 
 
 
-                <h4 class="w3-padding-16">How much I charge</h4>
+                <h4 class="w3-padding-16">How much we charge for Delivering Services</h4>
                 <div class="w3-row-padding" style="margin:0 -16px">
                     <div class="w3-half w3-margin-bottom">
                         <ul class="w3-ul w3-white w3-center">
                             <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
-                            <li class="w3-padding-16">Web Design</li>
-                            <li class="w3-padding-16">programming</li>
-                            <li class="w3-padding-16">technical help</li>
-                            <li class="w3-padding-16">Mail Support</li>
+                            <li class="w3-padding-16">LOW-COST DELIVERY FEE</li>
+                            <li class="w3-padding-16">5-DAYS DELIVERY</li>
+                            <li class="w3-padding-16">MAIL SUPPORT</li>
+                            <li class="w3-padding-16">LIMITED ORDERS</li>
                             <li class="w3-padding-16">
-                                <h2> ₹ 5000</h2>
+                                <h2> ₹ 500</h2>
                                 <span class="w3-opacity">per month</span>
                             </li>
                             <li class="w3-light-grey w3-padding-24">
@@ -174,12 +168,12 @@
                     <div class="w3-half">
                         <ul class="w3-ul w3-white w3-center">
                             <li class="w3-black w3-xlarge w3-padding-32">Pro</li>
-                            <li class="w3-padding-16">Web Design</li>
-                            <li class="w3-padding-16">PROGRAMMING</li>
-                            <li class="w3-padding-16">TECHINCAL SUPPORT</li>
-                            <li class="w3-padding-16">Endless Support</li>
+                            <li class="w3-padding-16">FREE DELIVERY</li>
+                            <li class="w3-padding-16">3-DAYS DELIVERY</li>
+                            <li class="w3-padding-16">QUICK MAIL-SUPPORT</li>
+                            <li class="w3-padding-16">UNLIMITED ORDERS</li>
                             <li class="w3-padding-16">
-                                <h2> ₹ 9000</h2>
+                                <h2> ₹ 900</h2>
                                 <span class="w3-opacity">per month</span>
                             </li>
                             <li class="w3-light-grey w3-padding-24">
@@ -190,15 +184,16 @@
                 </div>
             </div>
         </div>
+            
+        
+        
 
         <!-- Contact section -->
         <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
-            <div class="w3-content" style="max-width:600px">
-                <h4 class="w3-center"><b style="font-size:large ;">Contact Me</b></h4>
-                <p style="font-size:medium ;">Do you want me to make ur website or solve your techincal doubts ? Fill
-                    out the form
-                    and fill me in with the details :) I like to enhance with like minded people</p>
-                <form action="/action_page.php" target="_blank">
+            <div class="w3-content" style="max-width: 600px">
+                <h4 class="w3-center"><b style="font-size: large;">Contact Us</b></h4>
+                <p style="font-size: medium;">Do you have any questions or need assistance? Please fill out the form below, and we'll get back to you as soon as possible.</p>
+                <form action="/contact_form.php" target="_blank">
                     <div class="w3-section">
                         <label>Name</label>
                         <input class="w3-input w3-border" type="text" name="Name" required>
@@ -220,80 +215,48 @@
         <footer class="w3-container w3-padding-32 w3-grey">
             <div class="w3-row-padding">
                 <div class="w3-third">
-                    <h3>INFO</h3>
-                    <p style="font-size: 20px; ">@aman reddy S/O SRINIVAS REDDY Kouta ,Ranga reddy district,Hyderabad
-                        TELANGANA
-                    </p>
+                    <h3>LOCATION</h3>
+                    <p style="font-size: 20px;">Aman's Bookstore, Reading City, Bookland lane, Hyderbad</p>
                 </div>
 
                 <div class="w3-third">
-                    <h3>HOBBIES</h3>
+                    <h3>OUR SERVICES</h3>
                     <ul class="w3-ul">
                         <li class="w3-padding-16 w3-hover-black">
-                            <img src="https://www.w3schools.com/w3images/workshop.jpg" class="w3-left w3-margin-right"
-                                style="width:50px">
-                            <span class="w3-large">MUSIC</span><br>
-                            <span>Melody,Soothing</span>
+                            <img src="https://c8.alamy.com/comp/2RTR263/open-book-sketch-engraving-vector-illustration-scratch-board-style-imitation-2RTR263.jpg" class="w3-left w3-margin-right" style="width: 50px;">
+                            <span class="w3-large">Book Sales</span><br>
+                            <span>Wide range of books for all interests.</span>
                         </li>
                         <li class="w3-padding-16 w3-hover-black">
-                            <img src="https://www.w3schools.com/w3images/gondol.jpg" class="w3-left w3-margin-right"
-                                style="width:50px">
-                            <span class="w3-large">TRAVELLING</span><br>
-                            <span>EXPLORING,RIDING BIKE</span>
+                            <img src="https://c8.alamy.com/comp/P3G95P/vector-artistic-drawing-illustration-of-old-closed-book-P3G95P.jpg" class="w3-left w3-margin-right" style="width: 50px;">
+                            <span class="w3-large">Customer Support</span><br>
+                            <span>Need assistance? We're here to help.</span>
                         </li>
                     </ul>
                 </div>
 
                 <div class="w3-third">
-                    <h3>POPULAR TAGS</h3>
+                    <h3>POPULAR GENRES</h3>
                     <p>
-                        <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span
-                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">New York</span> <span
-                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">London</span>
-                        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">IKEA</span> <span
-                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">NORWAY</span> <span
-                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">DIY</span>
-                        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ideas</span> <span
-                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Baby</span> <span
-                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Family</span>
-                        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">News</span> <span
-                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Clothing</span> <span
-                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Shopping</span>
-                        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Sports</span> <span
-                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Games</span>
+                        <span class="w3-tag w3-black w3-margin-bottom">Fiction</span>
+                        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Mystery</span>
+                        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Romance</span>
+                        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Science Fiction</span>
+                        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">History</span>
+                        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Self-Help</span>
+                        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Biography</span>
                     </p>
                 </div>
             </div>
         </footer>
 
-        <div class="w3-black w3-center w3-padding-24">Made with <a href="https://www.instagram.com/reddy_aman_77/"
-                title="spaces" target="_blank" class="w3-hover-opacity">AMAN_REDDY</a></div>
+        <div class="w3-black w3-center w3-padding-24">Made By <a href="https://www.linkedin.com/in/aman-reddy-pundru-272b53221/" title="Aman Reddy"
+                target="_blank" class="w3-hover-opacity">Aman Reddy</a></div>
 
         <!-- End page content -->
     </div>
 
-    <script>
-        // Script to open and close sidebar
-        function w3_open() {
-            document.getElementById("mySidebar").style.display = "block";
-            document.getElementById("myOverlay").style.display = "block";
-        }
-
-        function w3_close() {
-            document.getElementById("mySidebar").style.display = "none";
-            document.getElementById("myOverlay").style.display = "none";
-        }
-
-        // Modal Image Gallery
-        function onClick(element) {
-            document.getElementById("img01").src = element.src;
-            document.getElementById("modal01").style.display = "block";
-            var captionText = document.getElementById("caption");
-            captionText.innerHTML = element.alt;
-        }
-    </script>
-
-
+    <script src="amanport.js"></script>
 </body>
 
 </html>
